@@ -21,3 +21,14 @@
         <h1>Mi Lista de Tareas</h1>
     </header>
     <main></main>
+     <?php
+    foreach ($tareas as $tarea) {
+        echo renderizarTarea($tarea);
+    }
+    ?>
+    </main>
+    <footer>
+        <p>© <?php echo date('Y'); ?> TaskFlow</p>
+    </footer>
+</body>
+</html>
